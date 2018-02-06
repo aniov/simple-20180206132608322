@@ -20,6 +20,11 @@ public class DBServiceRepository {
         return personRepository.findAll();
     }
 
+    @GetMapping("/getString")
+    public String getString() {
+        return "Hello";
+    }
+
     @PostMapping("/add")
     public void addPerson(@RequestParam(name = "name") String name, @RequestParam(name = "address", required = false, defaultValue = "") String address) {
 
