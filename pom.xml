@@ -44,6 +44,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.clianz</groupId>
+			<artifactId>cloudant-spring-boot-starter</artifactId>
+			<version>0.9.5</version>
+		</dependency>
 	</dependencies>
 
 	<build>
