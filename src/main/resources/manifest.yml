@@ -1,0 +1,12 @@
+declared-services:
+  sample-java-cloudant-cloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    plan: Lite
+applications:
+- name: db-service
+  instances: 1
+  buildpack: liberty-for-java
+  command: mvn spring-boot:run
+  memory: 512M
+  domain: mybluemix.net
+  disk_quota: 256M
